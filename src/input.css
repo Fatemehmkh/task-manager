@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: "YekanBakh";
+  src: url(./assets/fonts/yekan-bakh/YekanBakh-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "YekanBakh";
+  src: url(./assets/fonts/yekan-bakh/YekanBakh-SemiBold.woff2);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "YekanBakh";
+  src: url(./assets/fonts/yekan-bakh/YekanBakh-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "YekanBakh";
+  src: url(./assets/fonts/yekan-bakh/YekanBakh-Black.woff2);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Kalameh";
+  src: url(./assets/fonts/kalameh/Kalameh-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Kalameh";
+  src: url(./assets/fonts/kalameh/Kalameh-Bold.woff2);
+  font-weight: 700;
+}
+
+* {
+  font-family: "YekanBakh";
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, #ebf3ff, #ffffff);
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+@theme {
+  /* Light Mode */
+  --color-primary: #2c7ef8;
+  --color-primary-hover-light: #075cd9;
+  --color-on-primary-light: #ffffff;
+  --color-background-light: #ffffff;
+  --color-on-background-light: #191c1e;
+  --color-surface-light: #ffffff;
+  --font-vazir: YekanBakh;
+
+  /* Dark Mode */
+  --color-background-Dark: #040810;
+  --color-on-background-Dark: #e6e9ef;
+  --color-surface-Dark: #e6e9ef;
+
+  /* Semantic Colors */
+  --color-Errors: #e63946;
+  --color-Success: #90f677;
+
+  /* Padding for body in mobile size*/
+  --body-padding-mobile: 1rem;
+}
