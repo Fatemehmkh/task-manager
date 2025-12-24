@@ -15,18 +15,20 @@
     <!--Content-->
     <!-- first section UI -->
     <main>
-        <section id="td-tasks" class="flex flex-col mt-9! gap-2 mx-5!">
+        <section id="td-tasks" class="flex flex-col mt-9! gap-2 mx-5! lg:mx-65!">
             <h2 class="text-xl font-bold">تسک های امروز</h2>
-            <div class="">
-                <button class="flex items-center justify-start text-right pr-3 pt-3 text-blue-500 w-full border border-dashed border-gray-400 p-2 rounded-lg"><span class="text-5xl">+</span> افزودن تسک جدید</button>
-             </div>
-             <div>
-                 <div class="" id="bg-pic">
+            <!-- Having task or not -> js -->
+             <p class="text-gray-500">تسکی برای امروز نداری!</p>
+            
+                <button class="flex items-center justify-start text-right pr-3 pt-3 text-blue-500 w-full border border-dashed border-gray-400 p-2 rounded-lg cursor-pointer"><span class="text-5xl font-thin pl-3!">+</span>افزودن وظیفه جدید</button>
+             
+             <div class="opacity-50">
+                 <div class="size-[55%] m-auto! mt-12!" id="bg-pic">
                     <img src="../assets/images/TodayTasks.png.png" alt="">
                 </div>
-                 <div id="Tasks">
-                    <strong>چه کارهایی امروز برای انجام داری؟</strong>
-                    <p>میتونی الان تسک هاتو اینجا بنویسی و برنامه ریزی رو شروع کنی!</p>
+                 <div class="flex flex-col items-center justify-center text-center mx-10! gap-4" id="Tasks">
+                    <strong class="text-2xl font-bold [word-spacing:-4px]">چه کارهایی امروز برای انجام داری؟</strong>
+                    <p class="text-xl">میتونی الان تسک هاتو اینجا بنویسی و برنامه ریزی رو شروع کنی!</p>
                  </div>
              </div>
         </section>
