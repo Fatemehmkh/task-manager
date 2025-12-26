@@ -77,5 +77,5 @@ a {
   @apply flex justify-center items-center;
 }
 @utility menu-items {
-  @apply pr-5 w-full group flex items-center gap-4 h-11 rounded-lg hover:bg-hover-menu  transition-all duration-300 hover:text-primary;
+  @apply pr-5 w-full flex items-center gap-4 h-11 rounded-lg hover:bg-hover-menu  transition-all duration-300 hover:text-primary;
 }
