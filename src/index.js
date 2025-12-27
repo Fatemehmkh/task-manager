@@ -1,45 +1,18 @@
+// HamburgerMenu & SideBar //
+const menuBtn = document.querySelector("#menuBtn");
+const closeBtn = document.querySelector("#closeBtn");
+const menuBar = document.querySelector("#menuBar");
+const overlay = document.querySelector("#overlay")
+console.log(menuBtn);
 
-  const carousel = document.getElementById("carousel");
-  const nextBtn = document.getElementById("next");
-  const prevBtn = document.getElementById("prev");
+menuBtn.addEventListener("click", () => {
+  menuBar.classList.remove("-right-64");
+  menuBar.classList.add("right-0");
+  overlay.classList.remove("opacity-0", "pointer-events-none");
+});
 
-  let index = 0;
-
-  function getSlideWidth() {
-    const slide = carousel.children[0];
-    const gap = parseInt(getComputedStyle(carousel).gap) || 0;
-    return slide.offsetWidth + gap;
-  }
-
-  function updateCarousel() {
-    // دسکتاپ: هیچ کاری نکن
-    if (window.innerWidth >= 1024) {
-      carousel.style.transform = "translateX(0)";
-      index = 0;
-      return;
-    }
-
-    const slideWidth = getSlideWidth();
-    carousel.style.transform = `translateX(-${index * slideWidth}px)`;
-  }
-
-  nextBtn.addEventListener("click", () => {
-    const maxIndex = carousel.children.length - 1;
-    if (index < maxIndex) {
-      index++;
-      updateCarousel();
-    }
-  });
-
-  prevBtn.addEventListener("click", () => {
-    if (index > 0) {
-      index--;
-      updateCarousel();
-    }
-  });
-
-  window.addEventListener("resize", updateCarousel);
-
-  // اجرای اولیه
-  updateCarousel();
-
+closeBtn.addEventListener("click", () => {
+  menuBar.classList.remove("right-0");
+  menuBar.classList.add("-right-64");
+    overlay.classList.add("opacity-0", "pointer-events-none");
+});

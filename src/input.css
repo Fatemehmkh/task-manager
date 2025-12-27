@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
   font-family: "YekanBakh";
@@ -54,6 +55,9 @@ a {
   --color-background-light: #ffffff;
   --color-on-background-light: #191c1e;
   --color-surface-light: #ffffff;
+  --color-hover-menu: #f5faff;
+  --color-text-menu: #525252;
+  --color-text-menu: #525252;
   --font-vazir: YekanBakh;
 
   /* Dark Mode */
@@ -67,4 +71,11 @@ a {
 
   /* Padding for body in mobile size*/
   --body-padding-mobile: 1rem;
+}
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+@utility menu-items {
+  @apply pr-5 w-full  flex items-center gap-4 h-11 rounded-lg hover:bg-hover-menu  transition-all duration-300 hover:text-primary;
 }
