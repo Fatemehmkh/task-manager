@@ -6,13 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="../output.css" />
   </head>
-  <body>
+  <body class="dark:bg-gray-900">
     <!--Header-->
     <header class="p-4 lg:hidden">
       <div
         class="flex justify-between items-center h-12 bg-white shadow-sm p-4 rounded-lg"
       >
-        <button id="menuBtn" href="./src/pages/application.html">
+        <button id="menuBtn" class="cursor-pointer" href="./src/pages/application.html">
           <img src="./../assets/icons/menu.svg" alt="hamburger-menu" />
         </button>
         <h1 class="text-base font-semibold">کوئرا لیست</h1>
@@ -23,25 +23,25 @@
     <!--Overlay-->
     <div
       id="overlay"
-      class="lg:hidden fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out z-40"
+      class="lg:hidden fixed inset-0 dark:bg-[#060C18] bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out z-10"
     ></div>
     <!--Overlay-->
     <!--Aside-->
     <aside
       id="menuBar"
-      class="lg:hidden md:hidden h-screen z-50 w-64 absolute top-0 -right-64 bg-background-light transition-all duration-300"
+      class="lg:hidden md:hidden z-50 w-64 absolute top-0 pb-10 -right-64 bg-background-light transition-all duration-300 dark:bg-[#091120] text-gray-800 dark:text-gray-100"
     >
       <!--head of sidebar-->
       <div class="py-7 px-4 flex items-center justify-between">
-        <h2 class="font-bold text-[#242424]">کوئرا لیست</h2>
-        <button id="closeBtn">
+        <h2 class="font-bold text-[#242424] dark:text-white">کوئرا لیست</h2>
+        <button id="closeBtn" class="cursor-pointer">
           <img src="./../assets/icons/exit.svg" />
         </button>
       </div>
       <!--body of sidebar-->
       <div class="flex flex-col gap-6 px-4 text-text-menu">
         <div
-          class="bg-hover-menu pr-5 w-full flex items-center gap-4 h-11 rounded-lg"
+          class="bg-hover-menu pr-5 w-full flex items-center gap-4 h-11 rounded-lg dark:bg-[#041933]"
         >
           <img src="./../assets/icons/home-2.svg" />
           <span class="text-primary font-bold text-base">خانه</span>
@@ -72,18 +72,18 @@
         </div>
       </div>
       <!--toggle button for dark/light-->
-      <div class="mt-52.25! flex justify-center">
-        <div class="bg-[#F7F7F7] p-1 flex items-center gap-1 rounded-lg">
+      <div class="mt-28! flex justify-center">
+        <div class="bg-[#F7F7F7] dark:bg-[#0C1B31] p-1 flex items-center gap-1 rounded-lg">
           <button
             id="btn-light"
-            class="flex-center gap-3 bg-white py-1.5 px-4 rounded-lg"
+            class="flex-center gap-3 py-1.5 px-4 rounded-lg"
           >
             <img src="./../assets/icons/sun.svg" />
-            روشن
+           <span class="dark:text-[#7A7A7A]">روشن</span>
           </button>
           <button
             id="btn-dark"
-            class="flex-center gap-3 py-1.5 px-4 rounded-lg"
+            class="flex-center gap-3 py-1.5 px-4 dark:bg-gray-800 dark:text-white rounded-lg"
           >
             <img src="./../assets/icons/moon.svg" />
             <span>تاریک</span>
