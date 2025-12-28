@@ -16,3 +16,4 @@ closeBtn.addEventListener("click", () => {
   menuBar.classList.add("-right-64");
     overlay.classList.add("opacity-0", "pointer-events-none");
 });
+
